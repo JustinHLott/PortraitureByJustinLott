@@ -1,0 +1,8 @@
+{
+  "name": "portraiturebyjustinlott",
+  "version": "1.0.0",
+  "description": "Portrait photography website",
+  "scripts": {
+    "build": "echo 'Static site ready for deployment'"
+  }
+}
