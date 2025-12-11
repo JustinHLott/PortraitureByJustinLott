@@ -27,7 +27,8 @@ body {
 header {
     background-color: rgb(241, 242, 244, 0.911);
     color: rgb(69,71,56);
-    background-image: url(camera.jpg);
+    background-image: url("PortraitureLogo4s.png");
+    background-size: auto 70px;
     background-repeat: no-repeat;
     background-position: right;
     padding-top: 3px;
