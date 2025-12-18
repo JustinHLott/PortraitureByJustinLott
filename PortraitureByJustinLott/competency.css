@@ -1,13 +1,4 @@
-.wrapper {
-    /*background: white;*/
-    background-image: radial-gradient( rgb(63, 63, 63),darkgray,white,white,white);
-    background-repeat:no-repeat;
-    width: 80%;
-    max-width: 1100px;
-    min-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 body {
     background-image: linear-gradient(to bottom, darkgray, #FFFFFF);
     background-repeat: no-repeat;
@@ -112,6 +103,15 @@ footer {
 */
 /*for the Index page*/
 @media (max-width: 710px) {
+    .wrapper {
+        /*background: white;*/
+        background-image: radial-gradient( rgb(63, 63, 63),darkgray,white,white,white);
+        background-repeat:no-repeat;
+
+        max-width: 1100px;
+        min-width: 350px;
+
+    }
     #img1 {
         display: none;
     }
@@ -137,8 +137,26 @@ footer {
         background-repeat: no-repeat;
         background-position: right;
     }
+    #gallery {/*This is for the Portfolio*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        
+    }
 }
 @media (min-width: 710px) {
+    .wrapper {
+        /*background: white;*/
+        background-image: radial-gradient( rgb(63, 63, 63),darkgray,white,white,white);
+        background-repeat:no-repeat;
+        width: 80%;
+        max-width: 1100px;
+        min-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #img2 {
         display: none;
     }
@@ -154,6 +172,20 @@ footer {
         background-position: right;
         text-indent: 1em;
     }
+    #gallery {/*This is for the Portfolio*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: url(bkgrnd.jpg) repeat-y left top, url(bkgrnd.jpg) repeat-y right top;
+    }
+    #contact {/*This is for the Portfolio*/
+        padding-left: 30px;
+        padding-right: 30px;
+        background: url(bkgrnd.jpg) repeat-y left, url(bkgrnd.jpg) repeat-y right;
+    }
 } 
 
 picture {/*This is for the Portfolio*/
@@ -162,15 +194,7 @@ picture {/*This is for the Portfolio*/
     padding-bottom: 20px;
 
 }
-#gallery {/*This is for the Portfolio*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-left: 30px;
-    padding-right: 30px;
-    background: url(bkgrnd.jpg) repeat-y left top, url(bkgrnd.jpg) repeat-y right top;
-}
+
 #gallery img {/*This is for the Portfolio*/
     margin: 1em;
     box-shadow:5px 5px 5px #777;
@@ -181,26 +205,8 @@ figcaption {/*This is for the Portfolio*/
     text-align: center;
     text-shadow: 2px 2px 2px #777;
 }
-#contact {/*This is for the Portfolio*/
-    padding-left: 30px;
-    padding-right: 30px;
-    background: url(bkgrnd.jpg) repeat-y left, url(bkgrnd.jpg) repeat-y right;
-}
-/*Reservations page*/
-label {
-    float: left;
-    display: block;
-    text-align: left;
-    width: 160px;
-    padding-right: 5px;
-}
-input, textarea {
-    display: block;
-    margin-bottom: 20px;
-}
-input[type="submit"] {
-    margin-left: 165px;
-}
+
+
 /*pricing page*/
 #main-pricing {
     margin: 1em;
