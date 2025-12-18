@@ -16,16 +16,7 @@ body {
     font-size: 1em;
     margin-top: 0
 }
-header {
-    background-color: rgb(241, 242, 244, 0.911);
-    color: rgb(69,71,56);
-    background-image: url("Satisfy5s.png");
-    background-size: auto 70px;
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 3px;
-    text-indent: 1em;
-}
+
 nav {
     background-color: rgb(241, 242, 244, 0.911);
     font-weight: bold;
@@ -46,11 +37,20 @@ nav a:hover {
     transition-duration: 0s;
     transition-timing-function: linear;
 }
+/* Visited nav links */
+nav a:visited {
+    color: #009483;/*BLUEgREEN*/
+}
+.nav-link.active,
+nav a[aria-current="page"] {
+    color: rgb(69,71,56);
+}
 /*.nav-link.active {
   color: blue;   
 }*/
 h1 {
     margin-bottom: 0;
+    /*color: #009483;BLUEgREEN*/
 }
 h2 {
     color: rgb(69,71,56);
@@ -68,6 +68,15 @@ footer {
 }
 .centered {
     text-align: center;
+}
+/* Center an image horizontally */
+.center-img {
+    display: block;     /* ensures margin auto works */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow:5px 5px 5px #777;
 }
 .platypi-justin {
     font-family: "Platypi", serif;
@@ -96,41 +105,57 @@ footer {
 .clear-it {/*for the Index page*/
     clear: right;
 }
-#side-bar img {/*for the Index page*/
+/*
+#side-bar img {
     filter:opacity(70%);
-
-    
 }
+*/
 /*for the Index page*/
-@media (max-width: 900px) {
+@media (max-width: 710px) {
     #img1 {
         display: none;
     }
+    #logo {
+        background-color: rgb(241, 242, 244, 0.911);
+        background-image: url("Business Watermrk Logo (gold).png");
+        background-size: auto 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 70px;
+        padding-top: 3px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    header {
+        padding-top: 0px;
+        margin-top: 0px;
+        background-color: rgb(241, 242, 244, 0.911);
+        color: rgb(69,71,56);
+        text-indent: 1em;
+        background-image: url("picsLarge/Empty.png");
+        background-size: auto 70px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+@media (min-width: 710px) {
     #img2 {
         display: none;
     }
-    #img3 {
+    #logo {
         display: none;
     }
-}
-@media (max-width: 1150px) {
-    #img2 {
-        display: none;
+    header {
+        background-color: rgb(241, 242, 244, 0.911);
+        color: rgb(69,71,56);
+        background-image: url("Business Watermrk Logo (gold).png");
+        background-size: auto 70px;
+        background-repeat: no-repeat;
+        background-position: right;
+        text-indent: 1em;
     }
-    #img3 {
-        display: none;
-    }
-}
-@media (max-width: 1400px) {
-    #img3 {
-        display: none;
-    }
-}
-@media (max-width: 2000px) {
-    /*#img3 {
-        display: none;
-    }*/
-}
+} 
+
 picture {/*This is for the Portfolio*/
     display: flex;
     justify-content: center;
