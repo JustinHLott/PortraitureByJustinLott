@@ -57,6 +57,11 @@ footer {
     font-style: italic;
     background-color: rgb(241, 242, 244);
 }
+#photoAndQR{/*for the Index page*/
+    display: inline-flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
 .centered {
     text-align: center;
 }
@@ -95,6 +100,36 @@ footer {
 }
 .clear-it {/*for the Index page*/
     clear: right;
+}
+
+/* Photo + QR layout: allow QR to wrap to next row when space is limited */
+#photoAndQR {
+    display: flex;
+    flex-wrap: wrap;       /* allow items to wrap to next line */
+    align-items: center;   /* align photo and QR vertically when on same row */
+    justify-content: center; /* center items horizontally */
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+#photoAndQR img {
+    max-width: 100%;
+    height: auto;
+}
+#qrcode {
+    flex: 0 0 200px; /* fixed ideal size, will wrap if no room */
+    width: 200px;
+    height: 200px;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    #qrcode {
+        flex: 0 0 160px;
+        width: 160px;
+        height: 160px;
+        text-align: center;
+    }
 }
 /*
 #side-bar img {

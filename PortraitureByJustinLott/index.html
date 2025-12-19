@@ -17,13 +17,15 @@
     <div class="wrapper">
         <div id="headerComponent"></div>
         <main>
-            <div>
+            <div id="photoAndQR">
                 <br>
-                    <a class="example-image-link" href="picsLarge/IMG_0765 - Copy (4x6 tight).jpg" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_0765 - Copy (4x6 tight)-xs.jpg" alt="Portrait photos" height="auto" width = "350" id="img2"></a>
+                <a class="example-image-link" href="picsLarge/IMG_0765 - Copy (4x6 tight).jpg" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_0765 - Copy (4x6 tight)-xs.jpg" alt="Portrait photos" height="auto" width = "350" id="img2"></a>
 
-                    <a class="example-image-link" href="picsLarge/IMG_0765 - Copy (4x6 tight).jpg" data-lightbox="example-1"><img class="example-image center-img"  src="IMG_0765 - Copy (4x6 tight)-s.jpg" alt="Portrait photos" height="auto" width = "500" id="img1"></a>
-                    
+                <a class="example-image-link" href="picsLarge/IMG_0765 - Copy (4x6 tight).jpg" data-lightbox="example-1"><img class="example-image center-img"  src="IMG_0765 - Copy (4x6 tight)-s.jpg" alt="Portrait photos" height="auto" width = "500" id="img1"></a>
+
+                <div id="qrcode">Share this website!</div>
             </div>
+            
             <div id="main-area">
                 
                 <h3 class="platypi-justin">Portraits done right!</h3>
@@ -40,5 +42,12 @@
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="dist/js/linkColor.js"></script>
     <script type="module" src="js/javaScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>new QRCode(document.getElementById("qrcode"), {
+            text: "https://portraiturebyjustinlott.web.app/",
+            width: 200,
+            height: 200
+        });
+    </script>
 </body>
 </html>
