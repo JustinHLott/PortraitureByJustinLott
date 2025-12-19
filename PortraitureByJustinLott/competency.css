@@ -172,6 +172,7 @@ footer {
         background-repeat: no-repeat;
         background-position: right;
     }
+    
     #gallery {/*This is for the Portfolio*/
         display: flex;
         flex-direction: row;
@@ -206,6 +207,9 @@ footer {
         background-repeat: no-repeat;
         background-position: right;
         text-indent: 1em;
+    }
+    .brAfterQR {
+        display: none;
     }
     #gallery {/*This is for the Portfolio*/
         display: flex;
