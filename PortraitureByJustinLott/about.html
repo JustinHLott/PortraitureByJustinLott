@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Justin Lott</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="competency.css?v=3">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="headerComponent"></div>
+        <main>
+            <div id="photoAndQR">
+                <br>
+                <a class="example-image-link" href="picsLarge/IMG_2365 (color crop logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_2365 (color crop logo)s.jpg" alt="Portrait of photographer" height="auto" width = "350" id="img2"></a>
+
+                <a class="example-image-link" href="picsLarge/IMG_2365 (color crop logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_2365 (color crop logo)s.jpg" alt="Portrait of photographer" height="auto" width = "500" id="img1"></a>
+
+                <div id="qrcode">Share this website!</div>
+            </div>
+            
+            <div id="main-area">
+                
+                <h3 class="platypi-justin">About Justin Lott</h3>
+                <p>Portrait photographer, Justin Lott, loves taking photos. Especially photos of people. His love for photography started in Thailand in 1994 with a film camera. He took a picture of a unique statue and after he recieved the photo from the developer, he thought... "That photo could be in a magazine!"
+                </p>
+                <p>His skills for capturing art with photography grew as he studied and practiced taking portraits of his family and children. The image below is from Sand Hollow (southern Utah). Justin won a photography contest with this photo in 2016.</p>
+
+                <a class="example-image-link" href="picsLarge/DSC07638 (logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/DSC07638 (logo)s.jpg" alt="Portrait of photographer" height="auto" width = "350" id="img2contest"></a>
+
+                <a class="example-image-link" href="picsLarge/DSC07638 (logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/DSC07638 (logo)s.jpg" alt="Portrait of photographer" height="auto" width = "500" id="img1contest"></a>
+
+                <p>Justin loves the out doors. He grew up on a farm in the beautiful mountains of North Eastern Washington. In Utah, he finds solice hiking along the benches of Northern Utah. The parks of southern Utah are another favorite place, most Especially, Arches National Park. The photo below was taken at Tower Arch, Arches National Park.</p>
+
+                <a class="example-image-link" href="picsLarge/IMG_7919 (logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_7919 (logo)s.jpg" alt="Tower Arch Utah" height="auto" width = "350" id="img2arches"></a>
+
+                <a class="example-image-link" href="picsLarge/IMG_7919 (logo).JPG" data-lightbox="example-1"><img class="example-image center-img"  src="pics/IMG_7919 (logo)s.jpg" alt="Tower Arch Utah" height="auto" width = "500" id="img1arches"></a>
+
+            </div>
+            
+        </main>
+        <div id="footerComponent"></div>
+    </div>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="dist/js/linkColor.js"></script>
+    <script type="module" src="js/javaScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>new QRCode(document.getElementById("qrcode"), {
+            text: "https://portraiturebyjustinlott.web.app/",
+            width: 200,
+            height: 200
+        });
+    </script>
+</body>
+</html>

@@ -147,7 +147,7 @@ footer {
         min-width: 350px;
 
     }
-    #img1 {
+    #img1, #img1contest, #img1arches {
         display: none;
     }
     #logo {
@@ -192,7 +192,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    #img2 {
+    #img2, #img2contest, #img2arches {
         display: none;
     }
     #logo {
