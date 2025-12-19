@@ -181,6 +181,10 @@ footer {
 
         
     }
+    /* push following content below the QR when layout stacks on small screens */
+    #photoAndQR {
+        margin-bottom: 1.5rem;
+    }
 }
 @media (min-width: 710px) {
     .wrapper {
