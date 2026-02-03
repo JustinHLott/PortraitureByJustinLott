@@ -7,11 +7,22 @@ export function sanitizeInput(input) {
     .replace(/'/g, "&#039;");
 }
 
-//load the header and footer and other custom components
+// load the header and footer and other custom components
 export async function loadComponent(id, path) {
   const el = document.getElementById(id);
-  if (el) {
-    const html = await fetch(path).then(r => r.text());
-    el.innerHTML = html;
+
+  if (!el) return;
+
+  const html = await fetch(path).then(r => r.text());
+  el.innerHTML = html;
+
+  // 👇 Header-specific logic runs AFTER insertion
+  if (id === "headerComponent") {
+    const word = document.body.dataset.headerWord;
+    const titleSpan = document.getElementById("page-title");
+
+    if (word && titleSpan) {
+      titleSpan.textContent = `${word}`;
+    }
   }
 }
