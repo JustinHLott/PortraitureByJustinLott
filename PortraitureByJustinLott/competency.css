@@ -54,6 +54,39 @@ h3 {
 }
 ul{
     list-style-image: url(camera-bullet.jpg);
+    
+}
+.liSpring{
+    list-style: none;
+    background: url(liSpring.jpg) no-repeat left center;
+    background-size: 30px 30px; /* adjust size */
+    padding-top: 10px; /* make room for image */
+    padding-bottom: 10px; /* make room for image */
+    padding-left: 35px; /* make room for image */
+}
+.liSummer{
+    list-style: none;
+    background: url(liSummer.jpg) no-repeat left center;
+    background-size: 30px 30px; /* adjust size */
+    padding-top: 10px; /* make room for image */
+    padding-bottom: 10px; /* make room for image */
+    padding-left: 35px; /* make room for image */
+}
+.liFall{
+    list-style: none;
+    background: url(liFall.png) no-repeat left center;
+    background-size: 30px 30px; /* adjust size */
+    padding-top: 10px; /* make room for image */
+    padding-bottom: 10px; /* make room for image */
+    padding-left: 35px; /* make room for image */
+}
+.liWinter{
+    list-style: none;
+    background: url(liWinter.png) no-repeat left center;
+    background-size: 30px 30px; /* adjust size */
+    padding-top: 10px; /* make room for image */
+    padding-bottom: 10px; /* make room for image */
+    padding-left: 35px; /* make room for image */
 }
 footer {
     font-size: 75%;
@@ -154,7 +187,7 @@ footer {
         min-width: 350px;
 
     }
-    #img1, #img1contest, #img1arches {
+    #img1, #img1contest, #img1arches, #img1KateLphotography, #img1KateLphotography2, #img1KateLphotographySchemes {
         display: none;
     }
     #logo {
@@ -206,7 +239,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    #img2, #img2contest, #img2arches {
+    #img2, #img2contest, #img2arches, #img2KateLphotography, #img2KateLphotography2, #img2KateLphotographySchemes {
         display: none;
     }
     #logo {
