@@ -62,37 +62,24 @@ li{
     padding-left: 35px; /* make room for image */
     margin-left: -35px;
 }
-.liSpring{
+.liSeasons{
     list-style: none;
-    background: url(liSpring.jpg) no-repeat left center;
     background-size: 30px 30px; /* adjust size */
     padding-top: 10px; /* make room for image */
     padding-bottom: 10px; /* make room for image */
     padding-left: 35px; /* make room for image */
+}
+.liSpring{
+    background: url(liSpring.jpg) no-repeat left center;
 }
 .liSummer{
-    list-style: none;
     background: url(liSummer.jpg) no-repeat left center;
-    background-size: 30px 30px; /* adjust size */
-    padding-top: 10px; /* make room for image */
-    padding-bottom: 10px; /* make room for image */
-    padding-left: 35px; /* make room for image */
 }
 .liFall{
-    list-style: none;
     background: url(liFall.png) no-repeat left center;
-    background-size: 30px 30px; /* adjust size */
-    padding-top: 10px; /* make room for image */
-    padding-bottom: 10px; /* make room for image */
-    padding-left: 35px; /* make room for image */
 }
 .liWinter{
-    list-style: none;
     background: url(liWinter.png) no-repeat left center;
-    background-size: 30px 30px; /* adjust size */
-    padding-top: 10px; /* make room for image */
-    padding-bottom: 10px; /* make room for image */
-    padding-left: 35px; /* make room for image */
 }
 footer {
     font-size: 75%;
@@ -167,6 +154,8 @@ footer {
     height: 200px;
     display: block;
     text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 
 @media (max-width: 480px) {
