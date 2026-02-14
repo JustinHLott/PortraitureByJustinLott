@@ -190,7 +190,7 @@ footer {
 @media (max-width: 710px) {
     .wrapper {
         /*background: white;*/
-        background-image: radial-gradient( rgb(63, 63, 63),darkgray,white,white,white);
+        background-image: radial-gradient( rgb(118, 118, 118),darkgray,white,white,white);
         background-repeat:no-repeat;
 
         max-width: 1100px;
