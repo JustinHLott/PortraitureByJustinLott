@@ -52,9 +52,15 @@ h2 {
 h3 {
     color: rgb(69,71,56);
 }
-ul{
-    list-style-image: url(camera-bullet.jpg);
-    
+li{
+    /*list-style-image: url(camera-bullet.jpg);*/
+    list-style: none;
+    background: url(camera-bullet.jpg) no-repeat left center;
+    background-size: 30px auto; /* adjust size */
+    padding-top: 10px; /* make room for image */
+    padding-bottom: 10px; /* make room for image */
+    padding-left: 35px; /* make room for image */
+    margin-left: -35px;
 }
 .liSpring{
     list-style: none;
@@ -150,6 +156,10 @@ footer {
 #photoAndQR img {
     max-width: 100%;
     height: auto;
+}
+#qrCodeText{
+    text-align: center;
+    font-size: 1.2em;
 }
 #qrcode {
     flex: 0 0 200px; /* fixed ideal size, will wrap if no room */
