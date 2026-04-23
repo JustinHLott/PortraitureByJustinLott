@@ -26,3 +26,26 @@ export async function loadComponent(id, path) {
     }
   }
 }
+
+export function loadGallery({ folder, images, containerId, group = "gallery" }) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  images.forEach(file => {
+    const src = `${folder}/${file}`;
+
+    const link = document.createElement("a");
+    link.className = "example-image-link";
+    link.href = src;
+    link.setAttribute("data-lightbox", group);
+
+    const img = document.createElement("img");
+    img.className = "example-image";
+    img.src = src;
+    img.alt = file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+    img.width = 350;
+
+    link.appendChild(img);
+    container.appendChild(link);
+  });
+}

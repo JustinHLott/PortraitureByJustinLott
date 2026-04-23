@@ -94,6 +94,10 @@ footer {
 .centered {
     text-align: center;
 }
+.centered-text {
+    align-items: center;   /* align photo and QR vertically when on same row */
+    justify-content: center; /* center items horizontally */
+}
 /* Center an image horizontally */
 .center-img {
     display: block;     /* ensures margin auto works */
